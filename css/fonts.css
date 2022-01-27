@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Futura LT Condensed';
+    src: url('../fonts/FuturaLT-CondensedBold.eot');
+    src: url('../fonts/FuturaLT-CondensedBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaLT-CondensedBold.woff2') format('woff2'),
+        url('../fonts/FuturaLT-CondensedBold.woff') format('woff'),
+        url('../fonts/FuturaLT-CondensedBold.ttf') format('truetype'),
+        url('../fonts/FuturaLT-CondensedBold.svg#FuturaLT-CondensedBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

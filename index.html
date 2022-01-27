@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpandoVision Inc.</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Fancy CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <!-- Push In CSS -->
+    <link rel='stylesheet' href='css/pushin.min.css'>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <main>
+        <!-- Header Start -->
+        <header id="first">
+            <div class="logo-block">
+                <a href="#" title="ExpandoVision Inc.">
+                    <img src="images/logo.png" alt="ExpandoVision Logo" class="img-fluid" />
+                </a>
+            </div>
+
+        </header>
+
+        <div class="banner">
+            <video class="banner-video" autoplay loop muted>
+                <source src="images/banner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="hero-text">
+                <h1 title="we turn your digital discards">we turn your digital discards</h1>
+                <p>Tell our World Leaders that our patience has run out. That the climate crisis is real and we need action now! The more of us that speak up, the more they have to listen.</p>
+                <form action="">
+                    <div class="input-groupp">
+                        <input type="text" placeholder="Email" class="form-controll" required>
+                        <input type="submit" value="Subscribe" class="subscribe-btn">
+                    </div>
+                </form>
+            </div>
+
+            <!-- 		<?xml version="1.0" standalone="no"?>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L120,229.3C240,203,480,149,720,144C960,139,1200,181,1320,202.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> -->
+            <div class="curve"></div>
+
+            <div class="nav">
+                <a href="javascript:void(0)" class="nav__trigger">
+                    <div class="bars">
+                        <!--
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 15" style="fill: white; opacity: 1; display: block;" class="ham">
+                            <path d="M689.48,376.38c0,.14-.22,0-.22.18s.19.07.28.06l.67,0a9.8,9.8,0,0,1,2.34-.14c.07,0,.09.2.17.24s.2-.15.33,0c.05.61-.56.27-.64.77-.35.07-.87,0-1,.4-1.37.11-2.52.92-3.82.6a8.77,8.77,0,0,1-2.57.14c-.45,0-.9.08-1.34,0-.08,0-.13-.12-.19-.12a14.89,14.89,0,0,0-1.67.09c-.33,0-.59.12-.95.1s-1.05.06-1.67.09c-.31,0-.62-.12-.92-.07-.06,0-.13.11-.2.12s-.1-.06-.17-.06-.1.11-.14.12c-.19,0-.43,0-.64,0a4.81,4.81,0,0,1-.75,0,2,2,0,0,1-.56-.13c-.07,0-.13-.14-.19-.18s-.14,0-.2,0c-.26-.11-.45-.5-.75-.37-.09-.1-.16-.25-.28-.3a.79.79,0,0,1,.22-.48c0-.22-.13-.34-.08-.48.28-.16.52.1.75,0s.33-.39.53-.29c.08-.06.11-.24.2-.3.35.11.73-.1,1.14-.1.14,0,.28.12.42.13s.06-.11.08-.12a3.19,3.19,0,0,1,.56,0c.24,0,.72.07,1.09.08a11.88,11.88,0,0,1,2.09-.09c.31-.2.81,0,1.2-.1s.87.09,1.31.08C685.79,376.25,687.55,376.3,689.48,376.38Z" transform="translate(-674 -376)" fill-rule="evenodd"></path>
+                            <path d="M692.08,383.38c0,.26-.12,0-.17.07s.05.59-.07.58a2.62,2.62,0,0,0-.92.13c-.12.11.1,0,0,.24s-.38,0-.63.08-.68.34-1,.21c0,.26.1.08.14.16a18.09,18.09,0,0,1-3.31.11c-.13,0-.27-.11-.4-.1s-.31.23-.46.24-.61-.11-.91-.11c-.56,0-1.13.29-1.69.29a6.74,6.74,0,0,0-.91,0s-.1-.08-.14,0a1.63,1.63,0,0,0-.06.23s-.09-.26-.14-.28-.34.18-.49.12a2.18,2.18,0,0,0-.71-.3,6.06,6.06,0,0,0-1.57,0,4.76,4.76,0,0,1-1.12.31,3.28,3.28,0,0,0-1.54.08c-.18.08-.37.36-.55.34s-.35-.51-.57-.15c-.17-.39-.17-.54-.39-.34,0-.8.2-.67.3-1a6,6,0,0,1,.21-.91,2.82,2.82,0,0,0,1-.58c.23-.19.31-.15.6-.08.08,0,.14-.16.23-.18.25-.05.52.22.77.2s.29-.2.43-.25.17.1.26.07.08-.21.12-.21.24.13.37.1.26-.24.4-.26.54.19.82.21c.6,0,1.23,0,1.85,0a14.32,14.32,0,0,0,2.92-.33,8.05,8.05,0,0,0,1,0,16.56,16.56,0,0,1,2.4,0,5.91,5.91,0,0,1,3,.67C691.55,382.84,691.85,382.75,692.08,383.38Z" transform="translate(-674 -376)" fill-rule="evenodd"></path>
+                            <path d="M693.05,389.21c0,.2-.13,0-.18.06s.06.44-.07.44a3.83,3.83,0,0,0-1,.09c-.13.09.11,0,0,.18s-.4,0-.66.06a2.3,2.3,0,0,1-1.09.16c0,.19.11.06.15.12a26.87,26.87,0,0,1-3.5.08c-.14,0-.28-.08-.42-.08s-.32.17-.49.18c-.32,0-.64-.08-1-.09-.59,0-1.19.22-1.78.21-.34,0-.67,0-1,0,0,0-.11-.06-.15,0a1,1,0,0,0-.06.17s-.09-.19-.15-.21-.36.13-.51.09a2.87,2.87,0,0,0-.75-.23,9,9,0,0,0-1.66,0,6.7,6.7,0,0,1-1.18.24,4.84,4.84,0,0,0-1.63.06c-.19.06-.39.27-.58.26s-.37-.38-.6-.11c-.18-.29-.18-.4-.42-.26,0-.6.21-.5.32-.75a3.47,3.47,0,0,1,.22-.68,3.47,3.47,0,0,0,1.09-.43.74.74,0,0,1,.63-.06c.09,0,.15-.12.24-.14.26,0,.55.17.81.15s.31-.15.46-.19.18.08.27,0,.08-.15.12-.16.26.1.39.07.28-.18.43-.19a6.62,6.62,0,0,1,.87.16c.63,0,1.3,0,2,0a21.09,21.09,0,0,0,3.08-.25c.34,0,.69.07,1,0a24.61,24.61,0,0,1,2.53,0,8.43,8.43,0,0,1,3.22.5C692.48,388.81,692.8,388.74,693.05,389.21Z" transform="translate(-674 -376)" fill-rule="evenodd"></path>
+                        </svg>
+
+                        <svg class="close" width="34px" height="34px" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" style="transform: translate(-10px,-10px);">
+
+                            <g transform="translate(11.4, 10.4)">
+                                <path class="line1" d="M10.94,9.73c0-.06,0-.26-.08-.3s-.23-.29-.37-.42a.6.6,0,0,1-.12-.29c0-.08-.14-.08-.19-.14a4.1,4.1,0,0,1-.26-.41A32.4,32.4,0,0,0,7.16,5.34c-.07,0-.18,0-.22,0C7,5,6.66,5,6.44,4.77,6,4.44,5.66,4,5.27,3.65c0,0-.14,0-.19,0-.21-.13-.32-.38-.6-.37a1.62,1.62,0,0,0-.92-.71c.06-.21-.13-.19-.21-.26s-.1-.15-.18-.2a13.54,13.54,0,0,0-1.11-.84c0-.1,0-.19-.07-.21-.23.16-.44.31-.54.17l-.33.24c0-.19-.18-.08-.37.09.13.24.37.44.17.89,0,.08.08,0,.11.09A1.57,1.57,0,0,0,1.37,3.9c.34.05.43.33.66.56.26-.1.24.15.32.26s.25.12.35.21.13.28.35.23c0,.11,0,.06.05.17a.36.36,0,0,1,.19,0c.35.25.61.67,1,.78,0,.07,0,.11,0,.17s.27.2.38.27.07.16.14.23.25.13.35.21c.37.33.78.73,1,1s.55.49.79.76.42.34.59.54.14.26.23.37.44.2.48.52a1.17,1.17,0,0,1,.2.06A13.37,13.37,0,0,1,10,12c.05.07.09-.14.11-.07.21.12.25.35.41.49s.05-.06.08,0,.12.16.25.15.18-.16.22-.08.12,0,.14.15c.24-.15.26,0,.38.09s.24,0,.33.1.13.26.27.27.06-.1.16-.17a.85.85,0,0,0-.07-.64c-.1-.1,0-.37-.23-.47s.12,0,0-.1-.07,0-.1,0c.17-.17-.06-.4-.17-.36s0,.05,0,.09-.22-.27-.21-.43c.1,0,0,.19.15.17a1.13,1.13,0,0,0-.24-.48c-.11.1.09.16,0,.31-.09-.11-.17-.33-.23-.38s.17-.08.11-.16C11.31,10.09,11.06,10,10.94,9.73Zm.33.62c.07.07-.14-.11,0,0Zm-.4-.55c.11-.08,0,.07.05.07C10.83,10,10.87,9.82,10.87,9.8ZM11,10l-.07-.12S11.11,9.93,11,10Zm.89,1.37c.08-.07.07.07.11.09S11.9,11.43,11.86,11.41Z" transform="translate(-0.75 -0.39)" fill="#ffffff" fill-rule="evenodd"></path>
+                                <path class="line2" d="M9.24,2.34c.34,0-.14.11,0,.25s.2-.12.2-.12L9.8,2A6.93,6.93,0,0,1,11.06.53c.08,0,.19.08.27.06s0-.22.2-.19c.45.37-.14.51.16.9-.15.26-.51.52-.29.86-.73.9-.83,2.14-1.81,2.7a6.32,6.32,0,0,1-1.4,1.63,10,10,0,0,1-.75.83c-.05,0-.15,0-.2,0a11.5,11.5,0,0,0-.91,1.06,5.34,5.34,0,0,1-.48.64c-.27.25-.56.68-.91,1.07-.16.2-.44.3-.58.5,0,0,0,.16,0,.2s-.1,0-.14.06,0,.13,0,.16a4.54,4.54,0,0,1-.38.38,3.18,3.18,0,0,1-.4.48,1.37,1.37,0,0,1-.42.25s-.17,0-.24,0-.06.09-.11.11c-.23.08-.61-.06-.7.2a1.23,1.23,0,0,0-.37,0,.78.78,0,0,1-.2-.45c-.15-.15-.32-.15-.38-.28s.37-.24.44-.44-.08-.47.11-.52c0-.09-.1-.23-.09-.31.28-.14.35-.51.59-.76.08-.08.25-.08.33-.17s0-.11,0-.13a2.57,2.57,0,0,1,.33-.32c.15-.14.47-.4.69-.61C3.77,8,4,7.49,4.5,7.13c0-.32.49-.47.63-.79s.57-.46.82-.73C7,4.47,8.06,3.44,9.24,2.34Z" transform="translate(-0.75 -0.39)" fill="#ffffff" fill-rule="evenodd"></path>
+                            </g>
+                        </svg>
+-->
+
+                    </div>
+                </a>
+
+                <div class="nav__content">
+                    <nav class="nav__list">
+                        <ul>
+                            <li class="nav__item"><a href="#">Home</a></li>
+                            <li class="nav__item"><a href="#">About</a></li>
+                            <li class="nav__item"><a href="#">Team</a></li>
+                            <li class="nav__item"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div> <!-- .banner -->
+
+        <!-- Second Section Start -->
+        <section class="second-section" id="second">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="text-block">
+                        <h2>Gain Financial Independence This Quater without having to Scrimp and Save for Years</h2>
+                        <a href="#">out offer</a>
+                    </div> <!-- .text-block -->
+
+                    <div class="video-block">
+                        <video class="" autoplay loop muted>
+                            <source src="images/banner.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff; transform: ;msFilter:;">
+                                <path d="M7 6v12l10-6z"></path>
+                            </svg>
+                        </button>
+                    </div> <!-- .video-block -->
+
+                </div> <!-- .d-flex -->
+            </div>
+        </section>
+
+
+        <!-- Third Section Start -->
+        <section class="third-section" id="third">
+            <div class="curve-top"></div>
+            <div class="conatiner">
+                <div class="text-block">
+                    <h2>We champion doers who build innovative companies making commerce better.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquid nemo nam laborum exercitationem eveniet obcaecati libero omnis, ipsam aspernatur. Exercitationem vitae tenetur cumque at qui sunt porro. Consectetur sed excepturi molestiae porro assumenda, ipsam atque corrupti eaque quidem, odio, earum laborum omnis animi aliquam, placeat inventore. Iure, nulla, eos!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquid nemo nam laborum exercitationem eveniet obcaecati libero omnis, ipsam aspernatur. Exercitationem vitae tenetur cumque at qui sunt porro. Consectetur sed excepturi molestiae porro assumenda, ipsam atque corrupti eaque quidem, odio, earum laborum omnis animi aliquam, placeat inventore. Iure, nulla, eos!</p>
+                </div>
+
+            </div>
+            <div class="curve-bottom"></div>
+        </section>
+
+
+        <!-- Push In Section -->
+        <!--
+        <section class="demo-scroller push-in">
+            <div class="pushin-layer demo-layer-1" data-pushin-from="200" data-pushin-to="1000">
+                <div class="demo-text-box demo-layer-1-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+                </div>
+            </div>
+            <div class="pushin-layer demo-layer-2" data-pushin-from="700" data-pushin-to="2500">
+                <div class="demo-text-box demo-layer-2-text">
+                    Nulla neque nobis aliquam pariatur ea aspernatur corrupti unde
+                </div>
+                <div class="pushin-layer demo-layer-3" data-pushin-from="1500" data-pushin-to="2000">
+                    <div class="demo-text-box demo-layer-3-text">
+                        Alias non vel corrupti placeat veritatis sapiente iusto deserunt
+                    </div>
+                </div>
+                <div class="pushin-layer demo-layer-end" data-pushin-from="2000" data-pushin-to="6000" data-pushin-speed="25">
+                    <div class="demo-text-box demo-layer-end-text">
+                        Fourth Section
+                    </div>
+                </div>
+            </div>
+        </section>
+-->
+
+
+
+        <!-- Push In Section Alternative -->
+        <section class="alternative-push-section">
+            <div class="container container--circles">
+                <div class="circle c1 revealer">
+                    <div class="circle__inner">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="circle c2 revealer">
+                    <div class="circle__inner">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors.</p>
+                    </div>
+                </div>
+                <div class="circle c3 revealer">
+                    <div class="circle__inner">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    </div>
+                </div>
+                <div class="circle c4 revealer">
+                    <div class="circle__inner">
+                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+                    </div>
+                </div>
+                <div class="circle c5 revealer">
+                    <div class="circle__inner">
+                        <p> now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    </div>
+                </div>
+                <div class="circle c6 revealer">
+                    <div class="circle__inner">
+                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    </div>
+                </div>
+                <div class="circle c3 revealer">
+                    <div class="circle__inner">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    </div>
+                </div>
+                <div class="circle c4 revealer">
+                    <div class="circle__inner">
+                        <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section Start -->
+        <section class="how-it-works-section" id="fourth">
+            <div class="container">
+                <div class="title-block">
+                    <h2>how it works?</h2>
+                    <p>Don't be trapped by rules, revive your energy and start a journey to freedom and growth enjoying all the natural properties of the True CBD Cannabis.</p>
+                </div>
+
+
+                <div class="block">
+                    <div class="text-block">
+                        <h4>They call it Cannabis Light or Legal Weed. We produce True Cannabis</h4>
+
+                        <p>MA True Cannabis presents its 4 Worlds, CREATE – RELAX - PARTY and SLEEP, all designed around you and accessible through our Flowers, Pre-Rolled, and CBD Oils available in our shop.</p>
+
+                        <p>We grow and select extraordinary CBD Flowers, and produce high quality Pre-Rolled CBD Joints and CBD oil extractions by combining the best varieties of CBD cannabis with officinal herbs and essential oils, known for their properties since ancient times.</p>
+                    </div>
+
+                    <div class="img-block">
+                        <div class="product">
+                            <img src="images/product1.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="circular-img">
+                            <svg viewBox="-39 -39 578 578">
+                                <path d="
+        M 250, 250
+        m -250, 0
+        a 250,250 0 0,1 500,0
+        a 250,250 0 0,1 -500,0
+      " fill="none" id="curved-text-4 Worlds"></path>(<text textLength="1571" alignment-baseline="baseline">
+                                    <textPath startOffset="00%" xlink:href="#curved-text-4 Worlds" textLength="1571">&nbsp; • 4 Worlds • 4 Worlds • 4 Worlds • 4 Worlds • 4 Worlds • 4 Worlds</textPath>
+                                </text>)
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="text-block">
+                        <h4>They call it Cannabis Light or Legal Weed. We produce True Cannabis</h4>
+
+                        <p>MA True Cannabis presents its 4 Worlds, CREATE – RELAX - PARTY and SLEEP, all designed around you and accessible through our Flowers, Pre-Rolled, and CBD Oils available in our shop.</p>
+
+                        <p>We grow and select extraordinary CBD Flowers, and produce high quality Pre-Rolled CBD Joints and CBD oil extractions by combining the best varieties of CBD cannabis with officinal herbs and essential oils, known for their properties since ancient times.</p>
+                    </div>
+
+                    <div class="img-block">
+                        <div class="product">
+                            <img src="images/product2.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="circular-img">
+                            <svg viewBox="-39 -39 578 578">
+                                <path d="
+        M 250, 250
+        m -250, 0
+        a 250,250 0 0,1 500,0
+        a 250,250 0 0,1 -500,0
+      " fill="none" id="curved-text-4 Worlds"></path>(<text textLength="1571" alignment-baseline="baseline">
+                                    <textPath startOffset="00%" xlink:href="#curved-text-4 Worlds" textLength="1571">&nbsp; • 4 Worlds • 4 Worlds • 4 Worlds • 4 Worlds • 4 Worlds • 4 Worlds</textPath>
+                                </text>)
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Outcome Section Start -->
+        <section class="outcome-section" id="fifth">
+            <div class="container">
+                <h2>Outcome</h2>
+                <div class="outcome-news-block">
+                    <div class="date">
+                        <p>December 17</p>
+                    </div>
+                    <div class="news">
+                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, temporibus placeat. Eligendi ad laudantium veniam natus tenetur, ipsam itaque iure.</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, fugiat ipsam ad. Voluptas, aspernatur saepe commodi magnam. Expedita eius, ea mollitia cumque molestiae voluptatibus at fugit nulla, atque numquam eveniet voluptatum neque impedit enim explicabo quo eaque beatae. Omnis unde optio, explicabo aliquid eius iure illum, modi eligendi ex.</p>
+                    </div>
+                </div> <!-- .outcome-news-block -->
+                <div class="outcome-news-block">
+                    <div class="date">
+                        <p>December 17</p>
+                    </div>
+                    <div class="news">
+                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, temporibus placeat. Eligendi ad laudantium veniam natus tenetur, ipsam itaque iure.</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime, fugiat ipsam ad. Voluptas, aspernatur saepe commodi magnam. Expedita eius, ea mollitia cumque molestiae voluptatibus at fugit nulla, atque numquam eveniet voluptatum neque impedit enim explicabo quo eaque beatae. Omnis unde optio, explicabo aliquid eius iure illum, modi eligendi ex.</p>
+                    </div>
+                </div> <!-- .outcome-news-block -->
+
+            </div>
+        </section>
+
+        <!-- Hear What Our Clients Experience With Us Section -->
+        <section class="clients-experience-section" id="sixth">
+            <div class="container">
+                <h2>Hear What Our Clients Experience With Us</h2>
+                <div class="clients-video-block d-flex">
+                    <div class="block">
+                        <div class="vid-block">
+                            <iframe src="https://www.youtube.com/embed/Loc8VsaG9ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="text-block">
+                            <h4>Denis G. Blackston</h4>
+                            <p>1121 Alexander Drive</p>
+                        </div>
+                    </div> <!-- .block -->
+
+                    <div class="block">
+                        <div class="vid-block">
+                            <iframe src="https://www.youtube.com/embed/Loc8VsaG9ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="text-block">
+                            <h4>Shannon M. Houk</h4>
+                            <p>Chicago, IL 60603</p>
+                        </div>
+                    </div> <!-- .block -->
+
+                </div>
+
+                <div class="load-more-block">
+                    <button class="btn">More Testimonials</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Freedom Section -->
+        <section class="financial-freedom-section" id="seventh">
+            <div class="container">
+                <div class="title-block">
+                    <p>we literally wrote the book on</p>
+                    <h2>financial freedom the fast way</h2>
+                </div>
+                <div class="d-flex">
+                    <div class="book-block">
+                        <img src="images/book-img.png" alt="Book" class="img-fluid book" />
+                        <img src="" alt="Shine" class="glow-img lazy-img" data-src="images/shine.png">
+                    </div>
+                    <div class="text-block">
+                        <p>Ex alias vitae commodi cupiditate architecto consequatur dolorum itaque, doloremque ad eos, eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error distinctio cumque magni harum, veniam ratione iusto sunt culpa fuga accusamus et quae, nam aliquid aperiam ipsam officiis unde optio sed.</p>
+
+                        <p>Reiciendis minima incidunt nobis id itaque cumque voluptas amet dolores assumenda, voluptates accusantium, inventore aspernatur, quidem. Quod inventore porro maxime sequi cumque deserunt nobis dolore blanditiis obcaecati rem possimus quia ex aut saepe cupiditate corrupti necessitatibus harum sit error, velit sint exercitationem animi, consequatur. Consequatur aliquid cupiditate numquam beatae facilis, porro ipsa! Nesciunt?</p>
+                        <a href="#">buy the book</a>
+                        <div class="star-block">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                        <small>4.5 stars out of 2322 reviews on <i class="fab fa-amazon"></i></small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <div class="faq-section" id="eight">
+            <div class="container">
+                <div class="title">
+                    <h2>frequently asked questions</h2>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Question #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Question #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Question #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="nine">
+            <div class="container">
+                <div class="title">
+                    <h2>Let's plan for your financial freedom this quater</h2>
+                </div>
+
+                <div class="scrollbox scrollbox--secondary scrollbox--reverse">
+                    <div class="scrollbox__item">Don't Miss The Opportunity</div>
+                    <div class="scrollbox__item">Don't Miss The Opportunity</div>
+                    <div class="scrollbox__item">Don't Miss The Opportunity</div>
+                    <div class="scrollbox__item">Don't Miss The Opportunity</div>
+
+                </div>
+
+
+                <div class="site-footer-cta">
+
+                    <a class="site-footer-cta-item" href="#">
+                        <span class="site-footer-cta-item-label">REQUEST A CALL</span>
+                    </a>
+
+                    <a class="site-footer-cta-item" href="#">
+                        <span class="site-footer-cta-item-label">BECOME A MEMBER</span>
+                    </a>
+
+                </div> <!-- .site-footer-cta -->
+
+                <div class="site-footer-subscribe-block">
+                    <div class="lt-block">
+                        <small>don't miss a thing</small>
+                        <h4>subscribe to our quaterly newsletter</h4>
+                    </div>
+                    <div class="rt-block">
+                        <form>
+                            <input type="email" placeholder="Your Email Address" class="form-controll">
+                            <input type="submit" value="Send" class="subs-btn">
+                        </form>
+                    </div>
+                </div> <!-- .site-footer-subscribe-block -->
+
+
+                <div class="site-footer-social">
+                    <a href="#" target="_blank" rel="noreferrer" class="site-footer-social-item">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#" target="_blank" rel="noreferrer" class="site-footer-social-item">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="#" target="_blank" rel="noreferrer" class="site-footer-social-item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" target="_blank" rel="noreferrer" class="site-footer-social-item">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+                <div class="site-footer-links-block">
+                    <div class="footer-logo">
+                        <a href="#"><img src="images/logo.png" alt="Logo" class="img-fluid" /></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Anti-Spam Policy</a></li>
+                        <li><a href="#">Copyright Notice</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">DMCA Compliance</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Federal Trade Commission Compliance</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Social Media Disclosure</a></li>
+                        <li><a href="#">Terms of Service &amp; Conditions of Use</a></li>
+                    </ul>
+                </div> <!-- .site-footer-links-block -->
+
+                <div class="copy-right-block">
+                    <p>Copyright &copy; 2022 <a href="#">ExpandoVision, Inc.</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Start Scrollspy Nav Section -->
+    <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#first"></a>
+        <a class="list-group-item list-group-item-action" href="#second"></a>
+        <a class="list-group-item list-group-item-action" href="#third"></a>
+        <a class="list-group-item list-group-item-action" href="#fourth"></a>
+        <a class="list-group-item list-group-item-action" href="#fifth"></a>
+        <a class="list-group-item list-group-item-action" href="#sixth"></a>
+        <a class="list-group-item list-group-item-action" href="#seventh"></a>
+        <a class="list-group-item list-group-item-action" href="#eight"></a>
+        <a class="list-group-item list-group-item-action" href="#nine"></a>
+    </div>
+
+
+    <!-- End Scrollspy Nav Section -->
+
+
+    <!-- Popup Video -->
+    <!--
+    <video id="myVideo" style="display:none;" controls>
+        <source src="images/banner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+-->
+    <!-- Modal Video Popup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <video id="" controls>
+                        <source src="images/banner.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS CDN-->
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FancyBox CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- Push In CDN -->
+    <script src="js/pushin.min.js"></script>
+    <script>
+        pushInStart('.push-in');
+
+    </script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+
+    <script>
+        //Book Shine Effect Start When Finanacial Section In Viewport
+        if ('IntersectionObserver' in window) {
+            const targets = document.querySelectorAll(".lazy-img");
+
+            const lazyLoad = (target) => {
+                const io = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            const src = img.getAttribute("data-src");
+
+                            img.setAttribute("src", src);
+                            img.classList.add("shine");
+                            observer.disconnect();
+                        }
+                    })
+                }, {
+                    threshold: [0.7]
+                });
+
+                io.observe(target);
+            }
+            targets.forEach(lazyLoad);
+        } else {
+            alert("Your browser does not support IntersectionObserver");
+        }
+
+    </script>
+
+    <script>
+        //Modal Video
+        $("#exampleModal").on('hidden.bs.modal', function(e) {
+            $("#exampleModal video source").attr("src", "");
+        });
+
+    </script>
+    <script src="js/reveal.js"></script>
+</body>
+
+</html>
