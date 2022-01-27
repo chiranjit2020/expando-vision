@@ -43,7 +43,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: #222;
 }
 
 /* Handle on hover */
