@@ -33,7 +33,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width:10px;
+    width: 10px;
 }
 
 /* Track */
@@ -124,9 +124,9 @@ header .logo-block {
 
 .banner .hero-text h1 {
     font-family: 'Futura LT Condensed';
-    font-size: 170px;
+    font-size: clamp(50px, 7vw, 152px); 
     color: #fff;
-    line-height: 150px;
+    line-height: 1.16;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: -10px;
@@ -796,7 +796,8 @@ header .logo-block {
 .alternative-push-section .container--circles .circle.revealed {
     transform: scale(1);
 }
-.alternative-push-section .container--circles .circle p{
+
+.alternative-push-section .container--circles .circle p {
     font-family: inherit;
     font-size: 20px;
     color: #fff;
@@ -895,6 +896,10 @@ header .logo-block {
     left: 40%;
     bottom: 300px;
     z-index: 1;
+}
+
+.how-it-works-section .block .img-block .circular-img svg {
+    font-size: 40px;
 }
 
 @keyframes rotate {
@@ -1530,9 +1535,11 @@ footer .site-footer-links-block {
     padding: 30px 0;
     margin-top: 50px;
 }
-footer .site-footer-links-block .footer-logo{
+
+footer .site-footer-links-block .footer-logo {
     width: 320px;
 }
+
 footer .site-footer-links-block ul li {
     margin: 0 0 15px 0;
 }
@@ -1573,7 +1580,7 @@ footer .copy-right-block p a {
 }
 
 
-#exampleModal .modal-dialog .modal-content .modal-body video{
+#exampleModal .modal-dialog .modal-content .modal-body video {
     width: 100%;
     height: auto;
 }
